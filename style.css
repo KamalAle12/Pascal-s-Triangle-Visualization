@@ -1,0 +1,65 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#app {
+    text-align: center;
+    max-width: 800px;
+}
+
+input,
+button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#visualization {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.cell {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.cell.enter {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.cell.enter-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#code {
+    margin-top: 20px;
+    font-family: monospace;
+    text-align: left;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#code pre {
+    margin: 0;
+}
